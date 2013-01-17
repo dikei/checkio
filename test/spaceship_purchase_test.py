@@ -1,17 +1,13 @@
+from problems.spaceship_purchase import checkio
+from test.testgen import test_generator
+
 __author__ = 'dikei'
 
 import unittest
-from problems.spaceship_purchase import checkio
 
 
 class SpaceshipPurchaseTest(unittest.TestCase):
     pass
-
-def test_generator(expected, input):
-    def test_method(self):
-        actual = checkio(input)
-        self.assertEqual(expected, actual)
-    return test_method
 
 def gen_test():
     cases = (
@@ -20,5 +16,5 @@ def gen_test():
     )
     for index, case in enumerate(cases):
         test_name = "test_spaceship_purchase_{}".format(index)
-        test_func = test_generator(case[0], case[1])
+        test_func = test_generator(case[0], case[1], checkio)
         setattr(SpaceshipPurchaseTest, test_name, test_func)

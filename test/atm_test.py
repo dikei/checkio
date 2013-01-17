@@ -1,3 +1,5 @@
+from test.testgen import test_generator
+
 __author__ = 'dikei'
 
 import unittest
@@ -7,13 +9,7 @@ from problems.atm import checkio
 class AtmTest(unittest.TestCase):
     pass
 
-def test_generator(expected, input):
-    def test_method(self):
-        actual = checkio(input)
-        self.assertEqual(expected, actual)
-    return test_method
-
-def gen_atm_test():
+def gen_test():
     cases = (
         (57, [120, [10, 20, 30]]),
         (109, [120, [200, 10]]),
@@ -23,5 +19,5 @@ def gen_atm_test():
     )
     for index, case in enumerate(cases):
         test_name = "test_atm_{}".format(index)
-        test_func = test_generator(case[0], case[1])
+        test_func = test_generator(case[0], case[1], checkio)
         setattr(AtmTest, test_name, test_func)

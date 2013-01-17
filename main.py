@@ -7,7 +7,7 @@ def test_atm():
     """
     Test for atm problem
     """
-    atm_test.gen_atm_test()
+    atm_test.gen_test()
     suite = unittest.defaultTestLoader.loadTestsFromTestCase(atm_test.AtmTest)
     unittest.TextTestRunner().run(suite)
 
