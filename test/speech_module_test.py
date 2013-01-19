@@ -1,6 +1,4 @@
 from test.base_test import TestRoot
-
-__author__ = 'dikei'
 from problems.speech_module import checkio
 
 class TestSpeechModule(TestRoot):

@@ -1,5 +1,3 @@
-__author__ = 'dikei'
-
 def checkio(param):
     offer, raise_amt, price, drop_amt = param
     while True:

@@ -1,10 +1,5 @@
 from test.base_test import TestRoot
-
-__author__ = 'dikei'
-
-from nose.tools import eq_
 from problems.atm import checkio
-
 
 class TestAtm(TestRoot):
 

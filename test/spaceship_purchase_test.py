@@ -1,11 +1,6 @@
 from problems.spaceship_purchase import checkio
 from test.base_test import TestRoot
 
-__author__ = 'dikei'
-
-import unittest
-
-
 class TestSpaceshipPurchaseTest(TestRoot):
 
     def test_generator(self):

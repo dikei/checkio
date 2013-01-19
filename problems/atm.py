@@ -1,5 +1,3 @@
-__author__ = 'dikei'
-
 def checkio(input):
     account, withdraws = input
     for amount in withdraws:
