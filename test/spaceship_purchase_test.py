@@ -1,7 +1,7 @@
 from problems.spaceship_purchase import checkio
 from test.base_test import TestRoot
 
-class TestSpaceshipPurchaseTest(TestRoot):
+class TestSpaceshipPurchase(TestRoot):
 
     def test_generator(self):
         cases = (
