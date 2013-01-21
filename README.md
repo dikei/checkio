@@ -1,4 +1,5 @@
-My approach at solving checkio.org[1] problem.
+Solution to the games at [checkio.org][1].
+
 License: Public domain
 
 [1]: http://checkio.org
